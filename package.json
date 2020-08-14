@@ -1,0 +1,40 @@
+{
+  "name": "react-graphql-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@apollo/client": "^3.1.3",
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-plugin-emotion": "^10.0.33",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^7.6.0",
+    "eslint-plugin-import": "^2.22.0",
+    "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0",
+    "parcel-bundler": "^1.12.4",
+    "react-router-dom": "^5.2.0"
+  },
+  "scripts": {
+    "dev": "parcel ./index.html",
+    "format": "prettier \"src/**/*.{js, html}\" --write",
+    "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
+    "build": "parcel build ./index.html"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "@babel/polyfill": "^7.10.4",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
+    "bootstrap": "^4.5.2",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "^16.13.1",
+    "react-spinners": "^0.9.0"
+  }
+}
