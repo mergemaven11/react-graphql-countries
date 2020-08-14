@@ -72882,7 +72882,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var countryQuery = (0, _graphqlTag.default)(_templateObject()); // https://countries-274616.ew.r.appspot.com/?query=query%20getQuery%28%24filter%3A%20_CountryFilter%21%29%20%7B%0A%20%20%20%20%20%20%20%20Country%28filter%3A%20%24filter%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20_id%0A%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%20%20capital%0A%20%20%20%20%20%20%20%20%20%20%20%20population%0A%20%20%20%20%20%20%20%20%20%20%20%20nativeName%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%0A%60
+var GET_COUNTRY_INFO = (0, _graphqlTag.default)(_templateObject()); // https://countries-274616.ew.r.appspot.com/?query=query%20getQuery%28%24filter%3A%20_CountryFilter%21%29%20%7B%0A%20%20%20%20%20%20%20%20Country%28filter%3A%20%24filter%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20_id%0A%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%20%20capital%0A%20%20%20%20%20%20%20%20%20%20%20%20population%0A%20%20%20%20%20%20%20%20%20%20%20%20nativeName%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%0A%60
 // Write a function to handle the search; Second way to execute search below
 
 function Search() {
@@ -72895,7 +72895,7 @@ function Search() {
       filter = _useState2[0],
       setFilter = _useState2[1];
 
-  var _useQuery = (0, _reactHooks.useQuery)(countryQuery, {
+  var _useQuery = (0, _reactHooks.useQuery)(GET_COUNTRY_INFO, {
     variables: {
       filter: filter
     }
@@ -73105,7 +73105,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49853" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57103" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

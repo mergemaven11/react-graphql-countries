@@ -5,7 +5,7 @@ import CountryInfo from '../components/queryResults'
 import Loader from '../components/Loader'
 
 
-const countryQuery = gql`
+const GET_COUNTRY_INFO = gql`
     query getQuery($filter: _CountryFilter!) {
         Country(filter: $filter) {
             _id
@@ -26,7 +26,7 @@ const countryQuery = gql`
 
 export default function Search() {
     const [filter, setFilter] = useState({ name: 'Hungary' })
-    const { data, loading, error } = useQuery(countryQuery, {
+    const { data, loading, error } = useQuery(GET_COUNTRY_INFO, {
             variables: { filter },}) 
    
         if (loading){ 
