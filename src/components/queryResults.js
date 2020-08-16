@@ -19,9 +19,5 @@ const CountryInfo = ({country}) => (
 
 export default CountryInfo;
 
-// How to inport flag image(emoji); here. 
+// How to import flag image(emoji); here. 
 
-// Look in to TypeError: Uncaught TypeError: Cannot read property 'name' of undefined
-// https://stackoverflow.com/questions/56199798/how-to-fix-react-dom-development-js287-uncaught-typeerror-cannot-read-propert
-// https://www.reddit.com/r/graphql/comments/e4veky/i_cannot_figure_out_why_i_am_getting_a_typeerror/
-// https://stackoverflow.com/questions/56007720/how-to-pass-data-from-graphql-when-in-a-react-component
