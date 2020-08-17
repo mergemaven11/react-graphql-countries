@@ -19,18 +19,17 @@ const client = new ApolloClient({
 });
 
 const query = gql`
-query {
-	Country {
-    _id
-    name
-    capital
-    population
-    nativeName
-    # check the docs for more info
+  query {
+    Country {
+      _id
+      name
+      capital
+      population
+      nativeName
+      # check the docs for more info
+    }
   }
-}
-
- `;
+`;
 
 client.query({ query }).then((result) => console.log(result));
 
