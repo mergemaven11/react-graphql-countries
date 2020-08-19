@@ -52,7 +52,7 @@ export default function Search() {
           className="search"
           type="text"
           id="search"
-          placeholder="Enter a Country"
+          placeholder="Enter a Country ( I.e Hungary)"
           onChange={onChangeHandler}
         />
 
@@ -64,8 +64,8 @@ export default function Search() {
         >
           Search
         </button>
-
-        {/* below will be falsy unless there is an actual country in the first element of the array. */}
+      </div>
+      <div className="results">
         {data?.Country?.[0] && <CountryInfo country={data?.Country[0]} />}
       </div>
       {/* <h2>Click search to reset</h2> */}

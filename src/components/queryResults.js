@@ -1,8 +1,7 @@
 import React from "react";
 import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 
-const CountryInfo = ({ country }) => (
-  <div>
+const CountryInfo = ({country}) => (
     <Card style={{ width: "18rem" }}>
       {/* <Card.Img variant="top" src="holder.js/100px180?text=Image cap" /> */}
       <Card.Body>
@@ -14,7 +13,6 @@ const CountryInfo = ({ country }) => (
         <ListGroupItem>Native Name: {country.nativeName}</ListGroupItem>
       </ListGroup>
     </Card>
-  </div>
 );
 
 export default CountryInfo;
