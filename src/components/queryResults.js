@@ -1,18 +1,20 @@
 import React from "react";
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import Result from "../components/styled/results.jsx"
 
 const CountryInfo = ({country}) => (
-    <Card style={{ width: "18rem" }}>
-      {/* <Card.Img variant="top" src="holder.js/100px180?text=Image cap" /> */}
-      <Card.Body>
-        <Card.Title>{country.name}</Card.Title>{" "}
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroupItem>Capital: {country.capital} </ListGroupItem>{" "}
-        <ListGroupItem>Population: {country.population}</ListGroupItem>
-        <ListGroupItem>Native Name: {country.nativeName}</ListGroupItem>
-      </ListGroup>
-    </Card>
+
+    <Result.Wrapper>
+    <h1>{country.name}</h1>
+
+     <ul>
+        <li>Capital: {country.capital}</li>
+        <li>Population: {country.population}</li>
+     </ul>
+    </Result.Wrapper>
+
+
+
+
 );
 
 export default CountryInfo;

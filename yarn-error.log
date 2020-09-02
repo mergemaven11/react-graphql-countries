@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @bit/davidhu2000.react-spinners.clip-loader
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-bootstrap
 
 PATH: 
-  C:\Users\tobia\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\tobia\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\tobia\AppData\Local\Microsoft\WindowsApps;C:\Users\tobia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\tobia\AppData\Roaming\npm;C:\Users\tobia\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  C:\Users\tobia\AppData\Local\Temp\yarn--1599083469834-0.8821418374370258;C:\Users\tobia\OneDrive\Desktop\Projects\react-graphql-test\node_modules\.bin;C:\Users\tobia\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\tobia\AppData\Local\Microsoft\WindowsApps;C:\Users\tobia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\tobia\AppData\Roaming\npm;C:\Users\tobia\AppData\Local\Yarn\bin
 
 Yarn version: 
   1.22.4
@@ -14,17 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@bit%2fdavidhu2000.react-spinners.clip-loader: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66096:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
-      at Request.emit (events.js:315:20)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141720:10)
-      at Request.emit (events.js:315:20)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141642:12)
-      at Object.onceWrapper (events.js:421:28)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1220:12)
-      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+  Error: EPERM: operation not permitted, unlink 'C:\Users\tobia\OneDrive\Desktop\Projects\react-graphql-test\node_modules\deasync\bin\win32-x64-node-12\deasync.node'
 
 npm manifest: 
   {
@@ -64,7 +54,8 @@ npm manifest:
       "react": "^16.13.1",
       "react-bootstrap": "^1.3.0",
       "react-dom": "^16.13.1",
-      "react-spinners": "^0.9.0"
+      "react-spinners": "^0.9.0",
+      "styled-components": "^5.1.1"
     }
   }
 
